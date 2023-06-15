@@ -69,7 +69,7 @@
 
     <div class="search">
         <input type="text" placeholder="Search..." oninput="">
-        <button onclick="openGameInNewTab('about:blank')"><i class="fas fa-search"></i></button>
+        <button onclick="openGamesInNewTabs('about:blank')"><i class="fas fa-search"></i></button>
     </div>
 
     <div id="games">
@@ -86,11 +86,14 @@
     </div>
 
     <script>
-        function openGameInNewTab(url) {
-            var win = window.open(url, '_blank');
-            if (win) {
-                win.document.title = " ";
-                win.focus();
+        function openGamesInNewTabs(url) {
+            var gameLinks = document.querySelectorAll('#games a');
+            for (var i = 0; i < gameLinks.length; i++) {
+                var win = window.open(url, '_blank');
+                if (win) {
+                    win.document.title = " ";
+                    win.focus();
+                }
             }
         }
     </script>
