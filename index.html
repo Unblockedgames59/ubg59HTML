@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav>
         <img src="images/logo.png" alt="logo">
@@ -28,110 +30,50 @@
     <div class="featured">
         <h1>Popular:</h1>
         <div class="column">
-          <a href="games/bob-the-robber-2/" onclick="openGame('games/bob-the-robber-2/'); return false;">
-            <img src="images/bob-the-robber-2.png">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Bob the Robber 2</p>
-          </a>
-          <a href="games/vex7/" onclick="openGame('games/vex7/'); return false;">
-            <img src="images/vex7.jpeg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Vex 7</p>
-          </a>
+            <a href="games/bob-the-robber-2/" onclick="openGame('games/bob-the-robber-2/'); return false;">
+                <img src="images/bob-the-robber-2.png">
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <p class="game-title">Bob the Robber 2</p>
+            </a>
+            <a href="games/vex7/" onclick="openGame('games/vex7/'); return false;">
+                <img src="images/vex7.jpeg">
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <p class="game-title">Vex 7</p>
+            </a>
         </div>
         <div class="row">
-          <a href="games/vex6" onclick="openGame('games/vex6/'); return false;">
-            <img src="images/vex6.jpeg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Vex 6</p>
-          </a>
+            <a href="games/vex6" onclick="openGame('games/vex6/'); return false;">
+                <img src="images/vex6.jpeg">
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <p class="game-title">Vex 6</p>
+            </a>
         </div>
         <div class="row">
-          <a href="games/drive-mad/" onclick="openGame('games/drive-mad/'); return false;">
-            <img src="images/drive-mad.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Drive Mad</p>
-          </a>
+            <a href="games/drive-mad/" onclick="openGame('games/drive-mad/'); return false;">
+                <img src="images/drive-mad.jpg">
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <p class="game-title">Drive Mad</p>
+            </a>
         </div>
         <div class="column">
-          <a href="games/moto-x3m/" onclick="openGame('games/moto-x3m/'); return false;">
-            <img src="images/moto-x3m.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Moto X3M</p>
-          </a>
-          <a href="games/retro-bowl/" onclick="openGame('games/retro-bowl/'); return false;">
-            <img src="images/retro-bowl.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Retro Bowl</p>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/motox3m2/" onclick="openGame('games/motox3m2/'); return false;">
-            <img src="images/motox3m2.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Moto X3M 2</p>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/slope/" onclick="openGame('games/slope/'); return false;">
-            <img src="images/slope.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Slope</p>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/" onclick="openGame('games/'); return false;">
-            <img src="images/mc.png">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <p class="game-title">Minecraft</p>
-          </a>
-        </div>
-    </div>
-
-    <script>
-        function openGame(url) {
-            var win = window.open("about:blank");
-            win.document.write(`
-                <html>
-                <head>
-                    <style>
-                        body, html {
-                            margin: 0;
-                            padding: 0;
-                            overflow: hidden;
-                        }
-                        iframe {
-                            border: none;
-                            width: 100%;
-                            height: 100vh;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <iframe src="${url}"></iframe>
-                </body>
-                </html>
-            `);
-            win.document.close();
-        }
-    </script>
-</body>
-</html>
+            <a href="games/moto-x3m/" onclick="openGame('games/moto-x3m/'); return false;">
+                <img src="images/moto-x3m.jpg">
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <p class="game-title">Moto X3M</p>
+            </a>
+            <a href="games/retro-bowl/" onclick="openGame('games/retro-bowl/'); return false;">
+                <img src="images/retro-bowl.jpg">
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+               
