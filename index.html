@@ -11,19 +11,19 @@
 <body>
     <nav>
         <img src="images/logo.png" alt="logo">
-        <h1>MONKE Gaming Network™</h1>
+        <h1>MONKE Gaming Network™ v3.0</h1>
     </nav>
 
     <div class="featured">
         <h1>Popular:</h1>
         <div class="column">
-            <a href="games/bob-the-robber-2/" target="_blank">
+            <a href="#" onclick="openGame('games/bob-the-robber-2/');">
                 <img src="images/bob-the-robber-2.png">
                 <div class="play-button">
                     <i class="fa-solid fa-play"></i>
                 </div>
             </a>
-            <a href="games/vex7/" target="_blank">
+            <a href="#" onclick="openGame('games/vex7/');">
                 <img src="images/vex7.jpeg">
                 <div class="play-button">
                     <i class="fa-solid fa-play"></i>
@@ -31,7 +31,7 @@
             </a>
         </div>
         <div class="row">
-            <a href="games/vex6" target="_blank">
+            <a href="#" onclick="openGame('games/vex6/');">
                 <img src="images/vex6.jpeg">
                 <div class="play-button">
                     <i class="fa-solid fa-play"></i>
@@ -39,7 +39,7 @@
             </a>
         </div>
         <div class="row">
-            <a href="games/drive-mad/" target="_blank">
+            <a href="#" onclick="openGame('games/drive-mad/');">
                 <img src="images/drive-mad.jpg">
                 <div class="play-button">
                     <i class="fa-solid fa-play"></i>
@@ -47,13 +47,13 @@
             </a>
         </div>
         <div class="column">
-            <a href="games/moto-x3m/" target="_blank">
+            <a href="#" onclick="openGame('games/moto-x3m/');">
                 <img src="images/moto-x3m.jpg">
                 <div class="play-button">
                     <i class="fa-solid fa-play"></i>
                 </div>
             </a>
-            <a href="games/retro-bowl/" target="_blank">
+            <a href="#" onclick="openGame('games/retro-bowl/');">
                 <img src="images/retro-bowl.jpg">
                 <div class="play-button">
                     <i class="fa-solid fa-play"></i>
@@ -71,19 +71,23 @@
         </div>
 
         <div id="games">
-            <a href="games/bob-the-robber-2/" target="_blank"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
-            <a href="games/vex7/" target="_blank"><img src="images/vex7.jpeg" alt="vex 7"></a>
-            <a href="games/vex6/" target="_blank"><img src="images/vex6.jpeg" alt="vex 6"></a>
-            <a href="games/" target="_blank"><img src="images/mc.png" alt="minecraft"></a>
-            <a href="games/moto-x3m/" target="_blank"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
-            <a href="games/retro-bowl/" target="_blank"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
-            <a href="games/drive-mad/" target="_blank"><img src="images/drive-mad.jpg" alt="drive mad"></a>
-            <a href="games/slope/" target="_blank"><img src="images/slope.jpg" alt="slope"></a>
-            <a href="games/motox3m2/" target="_blank"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
+            <a href="#" onclick="openGame('games/bob-the-robber-2/');"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+            <a href="#" onclick="openGame('games/vex7/');"><img src="images/vex7.jpeg" alt="vex 7"></a>
+            <a href="#" onclick="openGame('games/vex6/');"><img src="images/vex6.jpeg" alt="vex 6"></a>
+            <a href="#" onclick="openGame('games/');"><img src="images/mc.png" alt="minecraft"></a>
+            <a href="#" onclick="openGame('games/moto-x3m/');"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
+            <a href="#" onclick="openGame('games/retro-bowl/');"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
+            <a href="#" onclick="openGame('games/drive-mad/');"><img src="images/drive-mad.jpg" alt="drive mad"></a>
+            <a href="#" onclick="openGame('games/slope/');"><img src="images/slope.jpg" alt="slope"></a>
+            <a href="#" onclick="openGame('games/motox3m2/');"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
         </div>
     </div>
 
     <script>
+        function openGame(url) {
+            window.open(url, '_blank', 'noopener');
+        }
+
         function searchGames() {
             // Add your search logic here
             console.log("Searching games...");
