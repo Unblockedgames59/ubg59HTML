@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
     <style>
+        /* Add custom styles here */
         .game-title {
             text-decoration: none;
             color: white;
-        }
-
-        .game-title:hover {
-            text-decoration: none;
         }
     </style>
 </head>
@@ -27,101 +24,94 @@
     <div class="featured">
         <h1>Popular:</h1>
         <div class="column">
-          <a href="games/bob-the-robber-2/" target="_blank">
-            <img src="images/bob-the-robber-2.png" alt="bob the robber 2">
+          <button>
+            <img src="images/bob-the-robber-2.png">
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </a>
-          <a href="games/vex7/" target="_blank">
-            <img src="images/vex7.jpeg" alt="vex 7">
+          </button>
+          <button>
+            <img src="images/vex7.jpeg">
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </a>
+          </button>
         </div>
         <div class="row">
-          <a href="games/vex6/" target="_blank">
-            <img src="images/vex6.jpeg" alt="vex 6">
+          <button>
+            <img src="images/vex6.jpeg">
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </a>
+          </button>
         </div>
         <div class="row">
-          <a href="games/drive-mad/" target="_blank">
-            <img src="images/drive-mad.jpg" alt="drive mad">
+          <button>
+            <img src="images/drive-mad.jpg">
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </a>
+          </button>
         </div>
         <div class="column">
-          <a href="games/moto-x3m/" target="_blank">
-            <img src="images/moto-x3m.jpg" alt="moto x3m">
+          <button>
+            <img src="images/moto-x3m.jpg">
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </a>
-          <a href="games/retro-bowl/" target="_blank">
-            <img src="images/retro-bowl.jpg" alt="retrobowl">
+          </button>
+          <button>
+            <img src="images/retro-bowl.jpg">
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </a>
+          </button>
         </div>
     </div>
 
     <div class="content">
-        <hr>
 
-        <div class="search">
-            <input type="text" placeholder="Search..." oninput="">
-            <button><i class="fas fa-search"></i></button>
-        </div>
+    <hr>
 
-        <div id="games">
-            <a href="games/bob-the-robber-2/" target="_blank">
-                <img src="images/bob-the-robber-2.png" alt="bob the robber 2">
-                <p class="game-title">Bob the Robber 2</p>
-            </a>
-            <a href="games/vex7/" target="_blank">
-                <img src="images/vex7.jpeg" alt="vex 7">
-                <p class="game-title">Vex 7</p>
-            </a>
-            <a href="games/vex6/" target="_blank">
-                <img src="images/vex6.jpeg" alt="vex 6">
-                <p class="game-title">Vex 6</p>
-            </a>
-            <a href="games/mc/" target="_blank">
-                <img src="images/mc.png" alt="minecraft">
-                <p class="game-title">Minecraft</p>
-            </a>
-            <a href="games/moto-x3m/" target="_blank">
-                <img src="images/moto-x3m.jpg" alt="moto x3m">
-                <p class="game-title">Moto X3M</p>
-            </a>
-            <a href="games/retro-bowl/" target="_blank">
-                <img src="images/retro-bowl.jpg" alt="retrobowl">
-                <p class="game-title">Retro Bowl</p>
-            </a>
-            <a href="games/drive-mad/" target="_blank">
-                <img src="images/drive-mad.jpg" alt="drive mad">
-                <p class="game-title">Drive Mad</p>
-            </a>
-            <a href="games/slope/" target="_blank">
-                <img src="images/slope.jpg" alt="slope">
-                <p class="game-title">Slope</p>
-            </a>
-            <a href="games/motox3m2/" target="_blank">
-                <img src="images/motox3m2.jpg" alt="moto x3m2">
-                <p class="game-title">Moto X3M 2</p>
-            </a>
-        </div>
+    <div class="search">
+        <input type="text" placeholder="Search..." oninput="">
+        <button><i class="fas fa-search"></i></button>
     </div>
 
-    <h2>Credit 3kh0</h2>
+    <div id="games">
+        <a href="about:blank" target="_blank"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+        <a href="about:blank" target="_blank"><img src="images/vex7.jpeg" alt="vex 7"></a>
+        <a href="about:blank" target="_blank"><img src="images/vex6.jpeg" alt="vex 6"></a>
+        <a href="about:blank" target="_blank"><img src="images/mc.png" alt="minecraft"></a>
+        <a href="about:blank" target="_blank"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
+        <a href="about:blank" target="_blank"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
+        <a href="about:blank" target="_blank"><img src="images/drive-mad.jpg" alt="drive mad"></a>
+        <a href="about:blank" target="_blank"><img src="images/slope.jpg" alt="slope"></a>
+        <a href="about:blank" target="_blank"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
+    </div>
+    </div>
 
-    <script src="script.js"></script>
+    <script>
+        var buttons = document.querySelectorAll('.content button');
+
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var gameLink = button.parentNode.href;
+                var win = window.open('about:blank');
+                win.document.title = "ㅤ";
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = gameLink;
+                win.document.body.appendChild(iframe);
+                button.style.background = '#00000';
+                button.disabled = true;
+            });
+        });
+    </script>
 </body>
 </html>
