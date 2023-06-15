@@ -69,7 +69,7 @@
 
     <div class="search">
         <input type="text" placeholder="Search..." oninput="">
-        <button><i class="fas fa-search"></i></button>
+        <button onclick="openGameInNewTab('games/bob-the-robber-2/')"><i class="fas fa-search"></i></button>
     </div>
 
     <div id="games">
@@ -84,7 +84,16 @@
         <a href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
     </div>
     </div>
+
+    <script>
+        function openGameInNewTab(url) {
+            var win = window.open('', '_blank');
+            if (win) {
+                win.document.title = " ";
+                win.location.href = url;
+                win.focus();
+            }
+        }
+    </script>
 </body>
 </html>
-
-<script src="script.js"></script>
