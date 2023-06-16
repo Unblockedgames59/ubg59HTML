@@ -13,7 +13,7 @@ input.addEventListener('input', () => {
 });
 
 // Code to open game links in a new tab and create an iframe
-const gameLinks = document.querySelectorAll('#games a');
+const gameLinks = document.querySelectorAll('#games a, .featured a');
 
 gameLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
