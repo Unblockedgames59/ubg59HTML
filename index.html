@@ -95,12 +95,27 @@
       max-width: 100px;
       height: auto;
     }
+    
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <img src="images/logo.png" alt="logo">
-    <h1>MONKE Gaming Network™ <span>3.0 Beta</span></h1>
+    <div class="nav-left">
+      <h1>MONKE Gaming Network™</h1>
+    </div>
+    <div class="nav-right">
+      <img src="images/logo.png" alt="logo">
+      <h1><span>3.0 Beta</span></h1>
+    </div>
   </nav>
 
   <div class="featured">
