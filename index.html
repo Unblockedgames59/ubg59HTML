@@ -72,34 +72,14 @@
     .form-container iframe {
       margin-top: 10px;
     }
-
-    /* Add the following CSS for the nav button */
-    .nav-button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 10px;
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-      font-family: Arial, sans-serif; /* Fallback font */
-      white-space: nowrap; /* Prevent line breaks */
-      overflow: hidden; /* Hide overflowing text */
-      text-overflow: ellipsis; /* Show ellipsis (...) for long text */
-    }
-
-    /* Add a custom class for the button */
-    .links-button {
-      font-family: 'Font Name', Arial, sans-serif; /* Replace 'Font Name' with your desired font */
-    }
   </style>
 </head>
 <body>
   <nav>
     <img src="images/logo.png" alt="logo">
     <h1>MONKE Gaming™</h1>
-    <div class="nav-button links-button" onclick="window.location.href='others/links'">LINKS</div>
-  </nav>
+    <a href="others/links">LINKS</a>
+  <nav>
 
   <div class="featured">
     <h1>Popular:</h1>
