@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONKE Gaming</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <style>
+    h1 {
+      /* float: right; */
+    }
+  
+    .game-info {
+      text-align: center;
+      color: white; /* Set the text color to white */
+      margin-top: 10px;
+    }
+  
+    .game-info a {
+      color: white; /* Set the text color to white */
+    }
+  
+    .game-info a:hover {
+      /* No underline on hover */
+    }
+  
+    .game-info .game-title {
+      font-size: 16px;
+      margin: 0;
+    }
+  
+    body {
+      background-image: url("images/background.jpg");
+      background-repeat: repeat;
+      background-size: cover;
+    }
+    
+    /* Add the following CSS */
+    .copy-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .copy-container h1,
+    .copy-container p {
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+  
+    /* Add the following CSS for the form */
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .form-container h1 {
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .form-container iframe {
+      margin-top: 10px;
+    }
+  
+    /* Add the following CSS for the navigation link */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin-right: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: 'Font Name', sans-serif; /* Replace 'Font Name' with the desired font family */
+    }
+    
+    /* Add the following CSS for the link in the navigation */
+    nav .nav-link {
+      position: absolute;
+      right: 77px;
+    }
+
+    /* Add the following CSS for the link in the navigation */
+    nav .version {
+      position: absolute;
+      right: 10px;
+    }
+
+    body,
+  h1,
+  h2,
+  p,
+  a {
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  p,
+  a,
+  input[type="text"],
+  button {
+    color: white;
+  }
+  
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="images/logo.png" alt="logo">
+    <h1>MONKE Gaming</h1>
+    <a href="other/links" class="nav-link">LINKS</a>
+    <a class="version">v3.0</a>
+  </nav>
+
+  <div class="featured">
+    <h1>Popular:</h1>
+    <div class="column">
+      <a href="games/bob-the-robber-2/">
+        <img src="images/bob-the-robber-2.png">
+        <div class="game-info">
+          <h2 class="game-title">Bob the Robber 2</h2>
+        </div>
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </a>
+      <a href="games/vex7/">
+        <img src="images/vex7.jpeg">
+        <div class="game-info">
+          <h2 class="game-title">Vex 7</h2>
+        </div>
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </a>
+    </div>
+    <div class="row">
+      <a href="https://bg.mgn.lol/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2FpvtAQMkM-1175b%3B9a122%3A4a209621138c961cf1b3%2Fknfez.jtol">
+        <img src="https://img.gamedistribution.com/1377b99c10284c229423118a941af3b1-512x512.jpeg" alt="ovo">
+        <div class="game-info">
+          <h2 class="game-title">OvO</h2>
+        </div>
+      </a>
+    </div>
+    <div class="row">
+      <a href="games/drive-mad/">
+        <img src="images/drive-mad.jpg">
+        <div class="game-info">
+          <h2 class="game-title">Drive Mad</h2>
+        </div>
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="games/moto-x3m/">
+        <img src="images/moto-x3m.jpg">
+        <div class="game-info">
+          <h2 class="game-title">Moto X3M</h2>
+        </div>
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </a>
+      <a href="games/retro-bowl/">
+        <img src="images/retro-bowl.jpg">
+        <div class="game-info">
+          <h2 class="game-title">Retro Bowl</h2>
+        </div>
+        <div class="play-button">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    <hr>
+
+    <div class="search">
+      <input type="text" placeholder="Search..." oninput="">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <div id="games">
+      <a href="https://blaaket.mgn.lol/">
+        <img src="https://i.ibb.co/2kWCC03/image.png" alt="blaaket">
+        <div class="game-info">
+          <h2 class="game-title">Blaaket</h2>
+        </div>
+      </a>
+      <a href="https://bananajump.netlify.app">
+        <img src="https://i.ibb.co/4Kjq885/image.png" alt="banana jump">
+        <div class="game-info">
+          <h2 class="game-title">Banana Jump</h2>
+        </div>
+      </a>
+      <a href="https://bg.mgn.lol/uv/service/hvtrs8%2F-wuw%2Cmctjpna%7Bgpownf.aoo%2Frelant%7B-iiakq%2Fknfez.jtol">
+        <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/0770daaa8c4ff3c36dd53e6e41f59396.png" alt="ooga booga banana monke">
+        <div class="game-info">
+          <h2 class="game-title">OBBM</h2>
+        </div>
+      </a>
+      
+      </div>
+    </div>
+    <div class="copy-container">
+      <h1>Version 3.0 Beta</h1>
+    </div>
+    <div class="copy-container">
+      <h1>Copyright © 2022-2023 MONKE Gaming Network™</h1>
+    </div>    
+  </div>  
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="script.js"></script>
