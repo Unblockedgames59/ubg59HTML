@@ -12,10 +12,6 @@
       float: right;
     }
   
-    nav h1 {
-      font-size: 48px;
-    }
-  
     .game-info {
       text-align: center;
       text-decoration: none; /* Remove underline */
@@ -76,12 +72,24 @@
     .form-container iframe {
       margin-top: 10px;
     }
+
+    /* Add the following CSS for the nav button */
+    .nav-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <nav>
     <img src="images/logo.png" alt="logo">
     <h1>MONKE Gaming™</h1>
+    <div class="nav-button" onclick="window.location.href='others/links'">LINKS</div>
   </nav>
 
   <div class="featured">
