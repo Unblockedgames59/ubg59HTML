@@ -81,40 +81,37 @@
       padding: 10px;
     }
     
-    nav h1 {
+    nav .logo-title {
+      display: flex;
+      align-items: center;
+    }
+    
+    nav .logo {
+      max-width: 100px;
+      height: auto;
+      margin-right: 10px;
+    }
+    
+    nav .title {
       font-size: 48px;
       color: white;
       margin: 0;
     }
     
-    nav span {
+    nav .beta {
       font-size: 20px;
-    }
-    
-    nav img {
-      max-width: 100px;
-      height: auto;
-    }
-    
-    .nav-left {
-      display: flex;
-      align-items: center;
-    }
-    
-    .nav-right {
-      display: flex;
-      align-items: center;
+      color: white;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div class="nav-left">
-      <h1>MONKE Gaming Network™</h1>
+    <div class="logo-title">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <h1 class="title">MONKE Gaming Network™</h1>
     </div>
-    <div class="nav-right">
-      <img src="images/logo.png" alt="logo">
-      <h1><span>3.0 Beta</span></h1>
+    <div class="beta">
+      3.0 Beta
     </div>
   </nav>
 
