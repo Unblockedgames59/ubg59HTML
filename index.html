@@ -8,12 +8,89 @@
   <link rel="stylesheet" href="/main.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
   <style>
-    /* ... your existing styles ... */
+    .game-info {
+      text-align: center;
+      text-decoration: none; /* Remove underline */
+      color: white; /* Set the text color to white */
+      margin-top: 10px;
+    }
+  
+    .game-info a {
+      text-decoration: none; /* Remove underline */
+      color: white; /* Set the text color to white */
+    }
+  
+    .game-info a:hover {
+      text-decoration: none; /* Remove underline on hover */
+    }
+  
+    .game-info .game-title {
+      font-size: 16px;
+      margin: 0;
+      text-decoration: none; /* Remove underline for game titles */
+    }
+  
+    body {
+      background-image: url("images/background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    /* Add the following CSS */
+    .copy-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .copy-container h1,
+    .copy-container p {
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+  
+    /* Add the following CSS for the form */
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .form-container h1 {
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .form-container iframe {
+      margin-top: 10px;
+    }
+  
+    /* Add the following CSS for the navigation link */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin-left: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: 'Font Name', sans-serif; /* Replace 'Font Name' with the desired font family */
+    }
 
     nav {
       display: flex;
       align-items: center;
       padding: 10px;
+      background-color: #333;
+      color: white;
     }
 
     nav img {
@@ -22,13 +99,13 @@
 
     nav h1 {
       margin: 0;
+      font-size: 24px;
     }
 
     nav a {
-      font-size: 30px;
+      font-size: 18px;
       text-decoration: none;
       color: white;
-      font-family: 'Font Name', sans-serif; /* Replace 'Font Name' with the desired font family */
       margin-left: 10px;
     }
   </style>
