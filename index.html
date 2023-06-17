@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,32 @@
   <link rel="stylesheet" href="/main.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
   <style>
+    h1 {
+      float: right;
+    }
+  
+    .game-info {
+      text-align: center;
+      text-decoration: none; /* Remove underline */
+      color: white; /* Set the text color to white */
+      margin-top: 10px;
+    }
+  
+    .game-info a {
+      text-decoration: none; /* Remove underline */
+      color: white; /* Set the text color to white */
+    }
+  
+    .game-info a:hover {
+      text-decoration: none; /* Remove underline on hover */
+    }
+  
+    .game-info .game-title {
+      font-size: 16px;
+      margin: 0;
+      text-decoration: none; /* Remove underline for game titles */
+    }
+  
     body {
       background-image: url("images/background.jpg");
       background-repeat: no-repeat;
@@ -47,9 +72,25 @@
     .form-container iframe {
       margin-top: 10px;
     }
-  </style>
+  
+    /* Add the following CSS for the navigation link */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin-left: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: 'Font Name', sans-serif; /* Replace 'Font Name' with the desired font family */
+    }
+  
+    </style>
 </head>
-
 <body>
   <nav>
     <img src="images/logo.png" alt="logo">
