@@ -10,6 +10,7 @@
   <style>
     h1 {
       float: right;
+      font-size: 20px;
     }
   
     .game-info {
@@ -74,15 +75,33 @@
     }
     
     /* Add the following CSS for the smaller text in <nav> tag */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    
     nav h1 {
-      font-size: 30px;
+      font-size: 48px;
+      color: white;
+      margin: 0;
+    }
+    
+    nav span {
+      font-size: 20px;
+    }
+    
+    nav img {
+      max-width: 100px;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <nav>
     <img src="images/logo.png" alt="logo">
-    <h1>MONKE Gaming™</h1>
+    <h1>MONKE Gaming Network™ <span>3.0 Beta</span></h1>
   </nav>
 
   <div class="featured">
