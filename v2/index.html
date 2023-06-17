@@ -10,7 +10,10 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             const links = document.getElementsByTagName('a');
             for (let i = 0; i < links.length; i++) {
-                links[i].setAttribute('target', '_self');
+                links[i].addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent the default link behavior
+                    window.location.href = event.target.href; // Redirect to the link URL
+                });
             }
         });
     </script>
