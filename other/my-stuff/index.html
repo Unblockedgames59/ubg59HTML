@@ -132,19 +132,19 @@
     <h1>All of my creations:</h1>
 
     <div id="games">
-      <a href="https://blaaket.mgn.lol/" target="game-iframe" onclick="openGame('https://blaaket.mgn.lol/')">
+      <a href="https://blaaket.mgn.lol/" target="_blank" onclick="openGame(event, 'https://blaaket.mgn.lol/')">
         <img src="https://i.ibb.co/2kWCC03/image.png" alt="blaaket">
         <div class="game-info">
           <h2 class="game-title">Blaaket</h2>
         </div>
       </a>
-      <a href="https://bananajump.netlify.app" target="game-iframe" onclick="openGame('https://bananajump.netlify.app/')">
+      <a href="https://bananajump.netlify.app" target="_blank" onclick="openGame(event, 'https://bananajump.netlify.app/')">
         <img src="https://i.ibb.co/4Kjq885/image.png" alt="banana jump">
         <div class="game-info">
           <h2 class="game-title">Banana Jump</h2>
         </div>
       </a>
-      <a href="https://obbm.netlify.app/" target="game-iframe" onclick="openGame('https://obbm.netlify.app/')">
+      <a href="https://obbm.netlify.app/" target="_blank" onclick="openGame(event, 'https://obbm.netlify.app/')">
         <img src="https://i.ibb.co/cY8P5Dg/image.png" alt="ooga booga banana monke">
         <div class="game-info">
           <h2 class="game-title">OBBM</h2>
@@ -162,16 +162,11 @@
   </div>
 
   <script>
-    function openGame(url) {
-      var iframe = document.createElement('iframe');
-      iframe.src = 'about:blank';
-      iframe.frameBorder = '0';
-      iframe.name = 'game-iframe';
-      document.body.appendChild(iframe);
-
-      setTimeout(function() {
-        iframe.contentWindow.location.replace(url);
-      }, 0);
+    function openGame(event, url) {
+      event.preventDefault();
+      var newWindow = window.open('about:blank', '_blank');
+      newWindow.document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Game</title><style>body{margin:0;overflow:hidden;}</style></head><body><iframe src="' + url + '" frameborder="0" style="width: 100%; height: 100%;"></iframe></body></html>');
+      newWindow.document.close();
     }
   </script>
 </body>
