@@ -45,8 +45,6 @@
       background-image: url("https://i.ibb.co/SKhq65w/background.png");
       background-repeat: repeat;
       background-size: cover;
-      margin: 0; /* Remove default body margin */
-      overflow: hidden; /* Prevent scrollbars */
     }
 
     /* Add the following CSS */
@@ -128,7 +126,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .iframe-container iframe {
@@ -149,19 +151,19 @@
     <h1>All of my creations:</h1>
 
     <div id="games">
-      <a href="https://blaaket.mgn.lol/" target="_blank" onclick="openGame(event, 'https://blaaket.mgn.lol/')">
+      <a href="https://blaaket.mgn.lol/" onclick="openGame(event, 'https://blaaket.mgn.lol/')">
         <img src="https://i.ibb.co/2kWCC03/image.png" alt="blaaket">
         <div class="game-info">
           <h2 class="game-title">Blaaket</h2>
         </div>
       </a>
-      <a href="https://bananajump.netlify.app" target="_blank" onclick="openGame(event, 'https://bananajump.netlify.app/')">
+      <a href="https://bananajump.netlify.app" onclick="openGame(event, 'https://bananajump.netlify.app/')">
         <img src="https://i.ibb.co/4Kjq885/image.png" alt="banana jump">
         <div class="game-info">
           <h2 class="game-title">Banana Jump</h2>
         </div>
       </a>
-      <a href="https://obbm.netlify.app/" target="_blank" onclick="openGame(event, 'https://obbm.netlify.app/')">
+      <a href="https://obbm.netlify.app/" onclick="openGame(event, 'https://obbm.netlify.app/')">
         <img src="https://i.ibb.co/cY8P5Dg/image.png" alt="ooga booga banana monke">
         <div class="game-info">
           <h2 class="game-title">OBBM</h2>
@@ -181,9 +183,13 @@
   <script>
     function openGame(event, url) {
       event.preventDefault();
-      var newWindow = window.open('about:blank', '_blank');
-      newWindow.document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Game</title><style>body{margin:0;}</style></head><body><div class="iframe-container"><iframe src="' + url + '" frameborder="0"></iframe></div></body></html>');
-      newWindow.document.close();
+      var iframeContainer = document.createElement('div');
+      iframeContainer.className = 'iframe-container';
+      var iframe = document.createElement('iframe');
+      iframe.src = url;
+      iframe.frameborder = '0';
+      iframeContainer.appendChild(iframe);
+      document.body.appendChild(iframeContainer);
     }
   </script>
 </body>
