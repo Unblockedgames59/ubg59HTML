@@ -183,19 +183,9 @@
   <script>
   function openGame(event, url) {
     event.preventDefault();
-    var iframeContainer = document.createElement('div');
-    iframeContainer.className = 'iframe-container';
-    var iframe = document.createElement('iframe');
-    iframe.src = 'about:blank';
-    iframe.frameborder = '0';
-    iframe.onload = function() {
-      var iframeWindow = iframe.contentWindow;
-      iframeWindow.document.open();
-      iframeWindow.document.write('<body style="margin: 0; overflow: hidden;"><iframe src="' + url + '" style="width: 100%; height: 100%; border: none;"></iframe></body>');
-      iframeWindow.document.close();
-    };
-    iframeContainer.appendChild(iframe);
-    document.body.appendChild(iframeContainer);
+    var newWindow = window.open('about:blank');
+    newWindow.document.write('<html><head><title>hello moto</title></head><body style="margin:0;"><iframe src="' + url + '" style="width:100%; height:100%; border:none;"></iframe></body></html>');
+    newWindow.document.close();
   }
 </script>
 </body>
