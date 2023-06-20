@@ -494,27 +494,30 @@
 
 <script src="script.js"></script>
 
-<script>
-    function sortGames() {
-      var gameList = document.getElementById('game-list');
-      var games = Array.from(gameList.children);
+  <script>
+    // Get the game elements
+    const gamesContainer = document.getElementById('games');
+    const gameElements = gamesContainer.getElementsByTagName('a');
 
-      games.sort(function(a, b) {
-        var titleA = a.querySelector('.game-title').textContent.toUpperCase();
-        var titleB = b.querySelector('.game-title').textContent.toUpperCase();
-        if (titleA < titleB) {
-          return -1;
-        }
-        if (titleA > titleB) {
-          return 1;
-        }
-        return 0;
-      });
+    // Convert the game elements to an array
+    const gameArray = Array.from(gameElements);
 
-      games.forEach(function(game) {
-        gameList.appendChild(game);
-      });
-    }
+    // Sort the game titles alphabetically
+    gameArray.sort((a, b) => {
+      const titleA = a.querySelector('.game-title').innerText.toLowerCase();
+      const titleB = b.querySelector('.game-title').innerText.toLowerCase();
+      if (titleA < titleB) return -1;
+      if (titleA > titleB) return 1;
+      return 0;
+    });
 
-    sortGames();
+    // Clear the games container
+    gamesContainer.innerHTML = '';
+
+    // Append the sorted game elements back to the container
+    gameArray.forEach((gameElement) => {
+      gamesContainer.appendChild(gameElement);
+    });
   </script>
+</body>
+</html>
