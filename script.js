@@ -45,3 +45,26 @@ gameLinks.forEach((link) => {
     `);
   });
 });
+
+function sortGames() {
+  var gameList = document.getElementById('game-list');
+  var games = Array.from(gameList.children);
+
+  games.sort(function(a, b) {
+    var titleA = a.querySelector('.game-title').textContent.toUpperCase();
+    var titleB = b.querySelector('.game-title').textContent.toUpperCase();
+    if (titleA < titleB) {
+      return -1;
+    }
+    if (titleA > titleB) {
+      return 1;
+    }
+    return 0;
+  });
+
+  games.forEach(function(game) {
+    gameList.appendChild(game);
+  });
+}
+
+sortGames();
