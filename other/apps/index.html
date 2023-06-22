@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <style>
+    /* Add the following CSS for the link in the navigation */
+    nav .nav-link {
+      position: absolute;
+      top: 20px;
+      right: 77px;
+      color: white;
+      text-decoration: none; /* Remove the underline */
+      font-size: 50px; /* Increase the font size */
+    }
+
+    h1 {
+      /* float: right; */
+    }
+
+    .game-info {
+      text-align: center;
+      color: white; /* Set the text color to white */
+      margin-top: 10px;
+    }
+
+    .game-info a {
+      color: white; /* Set the text color to white */
+    }
+
+    .game-info a:hover {
+      /* No underline on hover */
+    }
+
+    .game-info .game-title {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    body {
+      background-image: url("https://i.ibb.co/SKhq65w/background.png");
+      background-repeat: repeat;
+      background-size: cover;
+    }
+
+    /* Add the following CSS */
+    .copy-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .copy-container h1,
+    .copy-container p {
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* Add the following CSS for the form */
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .form-container h1 {
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+
+    .form-container iframe {
+      margin-top: 10px;
+    }
+
+    /* Add the following CSS for the navigation link */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+
+    nav a {
+      margin-right: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: 'Font Name', sans-serif; /* Replace 'Font Name' with the desired font family */
+    }
+
+    /* Add the following CSS for the link in the navigation */
+    nav .version {
+      position: absolute;
+      right: 10px;
+    }
+
+    body,
+    h1,
+    h2,
+    p,
+    a {
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    p,
+    a,
+    input[type="text"],
+    button {
+      color: white;
+    }
+
+    /* Add the following CSS for the iframe container */
+    .iframe-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Apps</h1>
+    <a href="https://games.mgn.lol/" class="nav-link">Home</a>
+    <a class="version">v3.0</a>
+  </nav>
+
+  <div class="featured">
+    <h1>All Apps:</h1>
+
+    <div id="games">
+      <a href="https://bg.mgn.lol/uv/service/hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-" onclick="openGame(event, 'https://bg.mgn.lol/uv/service/hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-')">
+        <img src="https://i.ibb.co/bKPHg0V/image.png" alt="youtube">
+        <div class="game-info">
+          <h2 class="game-title">Youtube</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="copy-container">
+    <h1>Version 3.0 Beta</h1>
+  </div>
+
+  <div class="copy-container">
+    <h1>Copyright © 2022-2023 MONKE Gaming Network™</h1>
+  </div>
+
+  <script>
+  function openGame(event, url) {
+    event.preventDefault();
+    var newWindow = window.open('about:blank');
+    newWindow.document.write('<html><head><title>ㅤ</title></head><body style="margin:0;"><iframe src="' + url + '" style="width:100%; height:100%; border:none;"></iframe></body></html>');
+    newWindow.document.close();
+  }
+</script>
+</body>
+</html>
